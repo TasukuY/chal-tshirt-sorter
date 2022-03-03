@@ -30,4 +30,9 @@ const tshirtSorter = str => {
     return sStr+mStr+lStr;
 }
 
+const tshirtSorter2 = str => str.replaceAll('l', '').replaceAll('m', '') + str.replaceAll('l', '').replaceAll('s', '') + str.replaceAll('s', '').replaceAll('m', '')
+
+let sorter = str => str.split('').sort().reverse().join('')
+console.log(sorter('slsmmsllsmsmlmsls'));
+
 
